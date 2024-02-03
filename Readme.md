@@ -2,6 +2,7 @@
 
 - Студент: [Eldar Sarkynov](https://up.htmlacademy.ru/htmlcss/39/user/2452017).
 - Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797)
+- Сайт: [Мой проект "Седона"](https://eldarsarkynov.github.io/2452017-sedona-39/)
 
 ---
 
