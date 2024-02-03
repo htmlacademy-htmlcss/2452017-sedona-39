@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Eldar Sarkynov](https://up.htmlacademy.ru/htmlcss/39/user/2452017).
-* Наставник: `Неизвестно`.
+- Студент: [Eldar Sarkynov](https://up.htmlacademy.ru/htmlcss/39/user/2452017).
+- Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797)
 
 ---
 
