@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -78,6 +79,8 @@
               </label>
             </li>
           </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -100,7 +103,9 @@
             </li>
           </ul>
         </fieldset>
-        <legend class="filter-price">Стоимость, ₽</legend>
+        <fieldset class="catalog-filter-group">
+          <legend class="filter-price">Стоимость, ₽</legend>
+        </fieldset>
         <label class="range-price">
           От<input type="text" name="min" value="0">
         </label>
