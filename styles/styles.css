@@ -13,6 +13,9 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html{
+  heigth: auto;
+}
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -20,8 +23,74 @@ body {
   line-height: 21px;
   color: #242424;
   background-color: #f2f2f2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main-container{
+  flex-grow: 1;
+}
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  line-height: 21px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  background-color: #FFFFFF;
+
 }
 
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 507px;
+
+}
+.navigation-user{
+  width: 270px;
+  margin-left: auto;
+}
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+
+}
+.hero-image{
+  display: block;
+  margin: 0 auto;
+}
+.search-link{
+  background-image: url(../images/logo-search.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+  height: 64px;
+}
+.heart-link{
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+  height: 64px;
+}
+.navigation-link-botton{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  border-color: #756157;
+  text-decoration: none;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -51,37 +120,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.navigation-link {
-  font-family: "PT Sans", sans-serif;
-  line-height: 21px;
-  font-weight: 700;
-  color: inherit;
-  text-decoration: none;
-  text-align: center;
-  background-color: #FFFFFF;
-}
 
-.navigation-list {
-  list-style: none;
-}
-.search-link{
-  background-image: url(../images/logo-search.svg);
-  background-repeat: no-repeat;
-}
-.heart-link{
-  background-image: url(../images/heart.svg);
-  background-repeat: no-repeat;
-}
-.navigation-link-botton{
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #756157;
-  border-color: #756157;
-  text-decoration: none;
-}
 /*main*/
 .main-index {
   color: #242424;
@@ -106,40 +145,74 @@ body {
 .advantages-list {
   text-align: center;
   list-style: none;
+  padding: 0;
+  margin: 0;
+
 }
 
 .advantages-fierst {
   background-color: #82B3D3;
   color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  width:1200px;
+  height: 385px;
+}
+.image-house{
+  width: 800px;
+  height: 385px;
+
 }
 
 .advantages-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  letter-spacing: 0em;
   text-transform: uppercase;
+  padding: 113px 85px;
+}
+.advantages-container{
+  display: flex;
+  justify-content:space-between;
+
+
 }
 
 .advantages-second {
   background-color: #83B3D31F;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 385px;
 }
 
 .advantages-third {
   background-color: #83B3D333;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 385px;
 }
 
 .advantages-fourth {
   background-color: #83B3D31F;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 385px;
 }
 
 .advantages-fifth {
   background-color: #82B3D3;
   color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 .service-fierst {
   background-color: #83B3D31F;
 }
+
 .service-item-fierst{
   background-image: url(../images/logo-home.svg);
   background-repeat: no-repeat;
@@ -161,6 +234,7 @@ body {
 }
 .booking-discription {
   text-align: center;
+
 }
 
 .buttom {
@@ -182,7 +256,7 @@ body {
   text-align: center;
   color: #333333;
   font-family: "PT Sans", sans-serif;
-  background-color: #B0C4DE;
+  background-color: #FFFFFF;
 }
 
 .subscribe-special {
@@ -284,7 +358,9 @@ body {
 .catalog-filter-list {
   list-style: none;
 }
-
+.catalog-button-list{
+  list-style: none;
+}
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
@@ -294,14 +370,23 @@ body {
 .catalog-button-tile{
   background-image: url(../images/catalog/logo-view.svg);
   background-repeat: no-repeat;
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 .button-card{
   background-image: url(../images/catalog/logo-card.svg);
   background-repeat: no-repeat;
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 .button-list{
   background-image: url(../images/catalog/logo-ul.svg);
   background-repeat: no-repeat;
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 .control {
   font-size: 18px;
@@ -387,14 +472,23 @@ body {
 .hotel-stars-four{
   background-image: url(../images/catalog/star-four.svg);
   background-repeat: no-repeat;
+  display: block;
+  width: 140px;
+  height: 37px;
 }
 .hotel-stars--three{
   background-image: url(../images/catalog/star-three.svg);
   background-repeat: no-repeat;
+  display: block;
+  width: 140px;
+  height: 37px;
 }
 .hotel-stars-two{
   background-image: url(../images/catalog/star-two.svg);
   background-repeat: no-repeat;
+  display: block;
+  width: 140px;
+  height: 37px;
 }
 .pagination-link {
   font-size: 20px;
