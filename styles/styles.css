@@ -482,6 +482,7 @@ body {
   width: 452px;
 }
 .subscribe-btn {
+  display: inline-block;
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
@@ -504,6 +505,7 @@ body {
   border-style: solid;
   border-color: #F2F2F2;
   background-color: #F2F2F2;
+  padding: 14px 20px;
 
 
 }
@@ -664,9 +666,27 @@ body {
   flex-wrap: wrap;
 
 }
+.control-label{
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.conrtol{
+  position: absolute;
+  display: block;
+}
+.control-mark{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+
+}
 .range-price{
   width: 143px;
-  margin-top: -70px;
 }
 .button-price{
   width: 191px;
@@ -674,8 +694,26 @@ body {
   flex-direction: column;
   margin-top: 56px;
 }
-.price{
-  padding: 12px, 20px, 12px, 20px;
+
+.range-scale{
+  width: 287px;
+  position: relative;
+  background-color: #756257;
+  line-height: 1px;
+
+}
+.range-bar{
+  position: absolute;
+  line-height: 1px;
+  background-color: #FFFFFF;
+}
+.range-toggle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
 }
 .button-reset{
   margin-top: 32px;
