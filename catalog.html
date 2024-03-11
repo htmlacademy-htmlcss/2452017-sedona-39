@@ -67,21 +67,21 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="pool" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wifi" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="wifi" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Wi-fi</span>
                 </label>
@@ -93,30 +93,36 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel" checked>
-                  <span class="control-mark-radio"></span>
+                  <input class="visually-hidden control-input" type="radio" name="hotel" checked>
+                  <span class="control-mark"></span>
                   <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel">
-                  <span class="control-mark-radio"></span>
+                  <input class="visually-hidden control-input" type="radio" name="hotel">
+                  <span class="control-mark"></span>
                   <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotel">
-                  <span class="control-mark-radio"></span>
+                  <input class="visually-hidden control-input" type="radio" name="hotel">
+                  <span class="control-mark"></span>
                   <span class="control-label">Аппартаменты</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <div class="filter-price">
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-price">
               <legend class="catalog-filter-title">Стоимость, ₽</legend>
+              <label class="range-price">
+              <input class="price-min" type="text" name="min" value="0" placeholder="от">
+              </label>
+              <label class="range-price">
+              <input class="price-max" type="text" name="max" value="9000" placeholder="до">
+              </label>
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0px; width: 226px">
@@ -128,17 +134,11 @@
                 </div>
               </div>
             </fieldset>
-            <label class="range-price">
-              От<input class="price" type="text" name="min" value="0" checked>
-            </label>
-            <label class="range-price">
-              До<input class="price" type="text" name="max" value="9000" checked>
-            </label>
-          </div>
           <div class="button-price">
             <button class="button-apply" type="submit">Применить</button>
             <button class="button-reset" type="submit">Сбросить</button>
           </div>
+        </div>
         </section>
       </section>
         <div class="catalog">
