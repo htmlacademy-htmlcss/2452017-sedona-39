@@ -177,13 +177,50 @@
         <section class="footer-contacts">
           <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
-        <section class="footer-logo-html">
-          <a class="footer-logo-link" href="https://htmlacademy.ru/">
-            <img class="html-logo" src="images/logoHTMLAcademy.svg" alt="Логотип htmlacademy">
+        <section class="footer-logo">
+          <a class="footer-logo-html" href="https://htmlacademy.ru/">
           </a>
         </section>
       </div>
     </footer>
+    <div class="model-container">
+      <div class="modal modal-auth">
+        <div class="modal-close">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        </div>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+            <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="form-label" for="appointment-date">
+                    Дата Заезда </label>
+                <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="27 апреля 2020">
+              <p class="appointment-info">Мы не можем отправить вас в прошлое.</p>
+                  <label class="form-label" for="appointment-time">
+                    Дата Выезда</label>
+                <input class="field" type="text" id="appointment-time" name="appointment-time" placeholder="1 сентября 2023">
+                <p class="appointment-info-number">На эти даты есть свободные номера. Пока есть.</p>
+              <p class="field-group appointment-form-phone">
+                <label class="form-label" for="appointment-phone">
+                  Взрослые
+                </label>
+                <button class="button-minus">-</button>
+                <input class="field-persons" type="text" id="appointment-persons" name="appointment-persons" placeholder="2">
+                <button class="button-minus">+</button>
+              </p>
+                <label class="form-label" for="appointment-name">
+                  Дети
+                </label>
+                <input class="field persons" type="text" id="appointment-name" name="appointment-name" placeholder="2">
+              </p>
+              <button class="button appointment-submit" type="submit">Найти</button>
+            </form>
+        </section>
+
+      </div>
+    </div>
   </body>
 
 </html>
