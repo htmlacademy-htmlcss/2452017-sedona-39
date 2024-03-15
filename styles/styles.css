@@ -896,20 +896,38 @@ body {
   width: 143px;
   position: relative;
 }
-.price-text{
-  position: relative;
-  color:#000000;
+
+.price-text {
+  position: absolute;
+  color: #000000;
   display: block;
   box-sizing: border-box;
   text-align: right;
   padding-right: 20px;
+  top: 318px;
+  left: 820px;
+  opacity: 0.3;
 
 }
+
 .price.max {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+  position: relative;
+}
+
+.price-text.max {
+  position: absolute;
+  color: #000000;
+  display: block;
+  box-sizing: border-box;
+  text-align: right;
+  padding-right: 20px;
+  top: 318px;
+  left: 960px;
+  opacity: 0.3;
 }
 
 .range-price {
@@ -926,10 +944,12 @@ body {
   padding-left: 36px;
   position: relative;
 }
+
 .control:hover,
-.control:active{
+.control:active {
   opacity: 0.3;
 }
+
 .control-label {
   font-family: "PT Sans";
   font-size: 18px;
@@ -945,9 +965,9 @@ body {
   display: block;
   background-color: #f2f2f2;
 }
-.control-mark:focus{
-  border: 3px solid #83B3D3;
-}
+
+.control-mark:focus {}
+
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
@@ -958,6 +978,7 @@ body {
 
 .control-input {
   appearance: none;
+  border: 3px solid #83B3D3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1000,9 +1021,10 @@ body {
 .range-scale {
   width: 287px;
   position: relative;
-  background-color: #756257;
+  background-color: #808080;
   line-height: 1px;
   height: 4px;
+  border: none;
 }
 
 .range-bar {
@@ -1018,6 +1040,7 @@ body {
   height: 20px;
   border-radius: 5px;
   cursor: pointer;
+  border: none;
 }
 
 .toggle-min {
@@ -1479,7 +1502,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-   /* display: none; */
+  /* display: none; */
 }
 
 .modal {
@@ -1534,11 +1557,14 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-align: left;
+  margin-top: 12px;
+
 }
 
 .field {
   width: 440px;
   margin-top: 23px;
+  margin-left: 18px;
   padding: 12px 20px;
   font: inherit;
   font-weight: 700;
@@ -1557,17 +1583,19 @@ body {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color:#000000
-
+  color: #000000
 }
 
 .appointment-info {
+  display: inline-block;
+  width: 280px;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   color: #FF5757;
-  margin: 4px 120px;
+  margin: 4px 137px;
   padding: 0px 20px;
+  flex-wrap: wrap;
 }
 
 .appointment-info-number {
@@ -1578,42 +1606,128 @@ body {
   margin: 4px 69px 0px 119px;
   padding: 0px 20px;
 }
-.field-group{
+
+.form-persons {
   display: flex;
-  width: 247px;
+  justify-content: space-between;
+}
+
+.field-group {
+  display: flex;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-.button-minus{
+
+.button-minus {
   width: 40px;
   height: 48px;
   padding: 23px 13px;
-  border:none;
+  border: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   margin-left: 46px;
 }
-.field-persons{
-  background-color:#F2F2F2;
+
+.field-persons {
+  background-color: #F2F2F2;
   box-sizing: border-box;
   padding: 14px 10px;
   width: 31px;
-  left:65px;
-  border:none;
+  height: 48px;
+  left: 65px;
+  border: none;
 }
-.button-plus{
+
+.button-plus {
   width: 40px;
   height: 48px;
   padding: 17px 13px;
-  border:none;
+  border: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-.field-persons::placeholder{
+
+.field-persons::placeholder {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  color:#000000
+  color: #000000
+}
+
+/* дети */
+.tooltip {
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 22px;
+  width: 25px;
+  height: 25px;
+}
+
+.tooltip-toggle {
+  border: none;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  padding: 0;
+}
+
+.form-label.icon::after {
+  position: relative;
+}
+
+.tooltip-icon {
+  width: 26px;
+  height: 26px;
+  background-color: #83B3D3;
+  border-radius: 50px;
+  padding-left: 5px;
+  padding-top: 4px;
+  margin: 0;
+  position: absolute;
+  top: -15px;
+  left: 30px;
+}
+
+.tooltip-text {
+  font-family: inherit;
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 20px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 216px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.button.appointment-submit {
+  box-sizing: border-box;
+  width: 577px;
+  background-color: #83B3D3;
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  border:none;
+  border-radius: 4px;
+  padding: 18px;
+  margin-top: 48px;
 }
