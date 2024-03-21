@@ -1546,37 +1546,29 @@ body {
   border-radius: 30px;
 }
 
-.modal-close {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background-color: #F2F2F2;
-  position: absolute;
-  top: 64px;
-  right: 52px;
-}
-.modal-close:hover{
+
+.modal-close-button:hover{
   background-color: #E6E6E6;
 }
-.modal-close:focus{
+.modal-close-button:focus{
   border: 3px solid #83B3D3;
 }
-.modal-close:active{
+.modal-close-button:active{
   opacity: 0.3;
 }
-
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 19px;
-  right: 19px;
-  width: 14px;
-  height: 14px;
-  border: none;
+  top: 60px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50px;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  border:none;
 }
 
 .modal-title {
@@ -1607,7 +1599,7 @@ body {
 
 .field {
   width: 440px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   font: inherit;
   font-weight: 700;
   background-color: #F2F2F2;
@@ -1619,14 +1611,6 @@ body {
   background-position: right 17px center;
 }
 
-.field::placeholder {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #000000
-}
 
 .appointment-info {
   display: inline-block;
@@ -1666,31 +1650,33 @@ body {
 }
 .button-group{
   display: flex;
-  width: 110px;
-  padding: 0;
-  margin: 0;
+  gap: 3px
+
 }
 .button-minus {
+  display: block;
   width: 40px;
   height: 48px;
+  padding: 23px 13px 23px 13px;
   border: none;
+  background-image: url(../images/modal/minus.svg);
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  opacity: 0.6;
 }
-
-.button-icon{
-  display: block;
-  margin: 0 auto;
-
+.button-minus:hover{
+  opacity: 1;
 
 }
-.button-icon:hover{
-  fill-opacity: 0.3;
+.button-minus:focus{
+  outline: 3px solid #82B3D3;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  opacity: 1;
 
-}
-.button-icon:focus{
-  border: 3px solid #82B3D3;
-  border-radius: 4px;
 }
 .field-persons {
   background-color: #F2F2F2;
@@ -1699,7 +1685,6 @@ body {
   box-sizing: border-box;
   padding: 14px 10px;
   width: 31px;
-  height: 48px;
   left: 65px;
   border: none;
   font-size: 18px;
@@ -1707,14 +1692,21 @@ body {
   line-height: 20px;
 }
 
-.button-plus {
+
+.button-plus{
+  display: block;
   width: 40px;
   height: 48px;
+  padding: 23px 13px 23px 13px;
   border: none;
+  background-image: url(../images/modal/plus.svg);
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  opacity: 0.6;
 }
-
 .field-persons::placeholder {
   font-size: 18px;
   font-weight: 700;
@@ -1754,6 +1746,7 @@ body {
 }
 
 .tooltip-icon {
+  display: block;
   width: 26px;
   height: 26px;
   background-color: #83B3D3;
@@ -1764,6 +1757,17 @@ body {
   position: absolute;
   top: -15px;
   left: 30px;
+}
+.tooltip-text::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #333333;
+  position: absolute;
+  left:106px;
+  top:-13px
 }
 .tooltip-text {
   font-family: inherit;
@@ -1779,7 +1783,7 @@ body {
   width: 216px;
   position: absolute;
   left: 50px;
-  top:30px;
+  top:18px;
   z-index: 1;
   transform: translateX(-50%);
   display: none;
@@ -1789,7 +1793,6 @@ body {
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
-
 .button.appointment-submit {
   box-sizing: border-box;
   width: 577px;
