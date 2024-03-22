@@ -11,12 +11,12 @@
   <body>
     <header class="page-header">
       <nav class="navigation-container">
-          <div class="logo-container">
-            <a class="logo-link" href="index.html">
-              <img class="logo-header" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
-            </a>
-          </div>
-          <ul class="navigation-list">
+        <div class="logo-container">
+          <a class="logo-link" href="index.html">
+            <img class="logo-header" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
+          </a>
+        </div>
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link-index" href="index.html">Главная</a>
           </li>
@@ -149,7 +149,7 @@
             Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
           <form class="email-section-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="email-text" type="text" id="email-user" name="email-user" placeholder="Ваш e-mail">
+            <input class="email-text" type="text" id="email-user" name="email-user" placeholder="Ваш e-mail">
             <button class="subscribe-btn" type="submit">Подписаться</button>
           </form>
         </section>
@@ -157,23 +157,23 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="vk-link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden"> Вконтакте </span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="telegram-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden"> Телеграм </span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="youtube-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden"> YouTube </span>
-              </a>
-            </li>
-          </ul>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="vk-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden"> Вконтакте </span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="telegram-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden"> Телеграм </span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden"> YouTube </span>
+            </a>
+          </li>
+        </ul>
         <section class="footer-contacts">
           <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
@@ -186,60 +186,74 @@
     <div class="model-container">
       <div class="modal modal-auth">
         <div class="modal-close">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
         </div>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <div class="appointment">
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="appointment">
               <label class="form-label" for="appointment-date">
-                    Дата Заезда: </label>
-                <input class="field" type="text" id="appointment-date" name="appointment-date" value="27 апреля 2020" required>
+                Дата Заезда: </label>
+              <input class="field" type="text" id="appointment-date" name="appointment-date" value="27 апреля 2020" placeholder="Укажите дату"
+                required>
+              <button class="calendar-icon" type="button"></button>
+            </div>
+            <p class="appointment-info">Мы не можем отправить вас в прошлое.</p>
+            <div class="appointment">
+              <label class="form-label" for="appointment-time">
+                Дата Выезда:</label>
+              <input class="field" type="text" id="appointment-time" name="appointment-time" value="1 сентября 2023" placeholder="Укажите дату"
+                required>
+              <button class="calendar-icon" type="button"></button>
+            </div>
+            <p class="appointment-info-number">На эти даты есть свободные номера. Пока есть.</p>
+            <section class="form-persons">
+              <div class="field-adult">
+                <label class="form-label" for="appointment-adult">
+                  Взрослые
+                </label>
+                <div class="button-group">
+                  <div class="container-minus">
+                    <button class="button-minus" type="button"></button>
                   </div>
-                <p class="appointment-info">Мы не можем отправить вас в прошлое.</p>
-                <div class="appointment">
-                  <label class="form-label" for="appointment-time">
-                    Дата Выезда:</label>
-                <input class="field" type="text" id="appointment-time" name="appointment-time" value="1 сентября 2023" required>
-              </div>
-                <p class="appointment-info-number">На эти даты есть свободные номера. Пока есть.</p>
-                <section class="form-persons">
-                <div class="field-adult">
-                  <label class="form-label" for="appointment">
-                    Взрослые
-                  </label>
-                  <div class="button-group">
-                <button class="button-minus" type="button"></button>
-                <input class="field-persons" type="number" id="appointment-persons" name="appointment-persons" value="2" required>
-                <button class="button-plus" type="button"></button>
+                  <input class="field-persons" type="text" id="appointment-adult" name="appointment-adult" value="2"
+                    required>
+                  <div class="container-plus">
+                    <button class="button-plus" type="button"></button>
                   </div>
+                </div>
               </div>
               <div class="field-children">
-              <label class="form-label icon" for="appointment">
-                Дети
-              </label>
+                <label class="form-label icon" for="appointment-children">
+                  Дети
+                </label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                    <svg class="tooltip-icon" width="1" height="9" fill="none"><path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd"/></svg>
+                    <svg class="tooltip-icon" width="1" height="9" fill="none">
+                      <path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd" />
+                    </svg>
                   </button>
-                  <p class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст
-                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-                    <div class="arrow-up"></div>
-                 </span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут
+                    с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
-                <div class="button-group">
-            <button class="button-minus" type="button"></button>
-            <input class="field-persons" type="number" id="appointment-persons" name="appointment-persons" value="2" required>
-            <button class="button-plus" type="button"></button>
-                </div>
-          </div>
+                  <div class="button-group">
+                    <div class="container-minus">
+                      <button class="button-minus" type="button"></button>
+                    </div>
+                    <input class="field-persons" type="text" id="appointment-children" name="appointment-children"
+                      value="2" required>
+                    <div class="container-plus">
+                      <button class="button-plus" type="button"></button>
+                    </div>
+                  </div>
+              </div>
+            </section>
+            <button class="button appointment-submit" type="submit">Найти</button>
+          </form>
         </section>
-              <button class="button appointment-submit" type="submit">Найти</button>
-            </form>
-        </section>
-
       </div>
     </div>
   </body>
