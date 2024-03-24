@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <div class="page-container">
     <header class="page-header">
       <nav class="navigation-container">
           <div class="logo-container">
@@ -80,13 +81,13 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="wifi" checked>
-                  <span class="control-label">Wi-fi</span>
+                  <span class="control-label">WI-FI</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -108,9 +109,8 @@
               </li>
             </ul>
           </fieldset>
-          <div class="filter-price">
             <fieldset class="catalog-filter-price">
-              <legend class="catalog-filter-title">Стоимость, ₽</legend>
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="range-price">
               <input class="price" type="text" name="min" value="0" placeholder="">
               <span class="price-text">от</span>
@@ -130,7 +130,6 @@
                 </div>
               </div>
             </fieldset>
-            </div>
           <div class="button-price">
             <button class="button-apply" type="submit">Применить</button>
             <button class="button-reset" type="reset">Сбросить</button>
@@ -172,7 +171,7 @@
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               <div class="hotel-card-text">
                 <p class="hotel-card-type">Гостиница</p>
-                <p class="hotel-card-price">от 4000 ₽</p>
+                <p class="hotel-card-price">От 4000 ₽</p>
               </div>
               <div class="card-buttons">
               <a class="hotel-card-discription" href="#">Подробнее
@@ -195,7 +194,7 @@
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               <div class="hotel-card-text">
                 <p class="hotel-card-type">Гостиница</p>
-                <p class="hotel-card-price">от 5000 ₽</p>
+                <p class="hotel-card-price">От 5000 ₽</p>
               </div>
               <div class="card-buttons">
               <a class="hotel-card-discription" href="#">Подробнее
@@ -218,7 +217,7 @@
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
               <div class="hotel-card-text">
                 <p class="hotel-card-type">Гостиница</p>
-                <p class="hotel-card-price">от 5000 ₽</p>
+                <p class="hotel-card-price">От 5000 ₽</p>
               </div>
               <div class="card-buttons">
               <a class="hotel-card-discription" href="#">Подробнее
@@ -241,7 +240,7 @@
               <h3 class="hotel-card-title">GreenTree Inn</h3>
               <div class="hotel-card-text">
                 <p class="hotel-card-type">Гостиница</p>
-                <p class="hotel-card-price">от 1500 ₽</p>
+                <p class="hotel-card-price">От 1500 ₽</p>
               </div>
               <div class="card-buttons">
               <a class="hotel-card-discription" href="#">Подробнее<span class="visually-hidden">Подробнее</span></a>
@@ -293,35 +292,32 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer-container">
-        <section class="footer-social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="vk-link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden"> Вконтакте </span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="telegram-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden"> Телеграм </span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="youtube-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden"> YouTube </span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-contacts">
-          <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
-        <section class="footer-logo">
-          <a class="footer-logo-html" href="https://htmlacademy.ru/">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="vk-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden"> Вконтакте </span>
           </a>
-        </section>
-      </div>
-    </footer>
+        </li>
+        <li class="social-item">
+          <a class="telegram-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden"> Телеграм </span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden"> YouTube </span>
+          </a>
+        </li>
+      </ul>
+      <section class="footer-contacts">
+        <a class="footer-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section class="footer-logo">
+        <a class="footer-logo-html" href="https://htmlacademy.ru/">
+        </a>
+      </section>
+  </footer>
+</div>
   </body>
 
 </html>

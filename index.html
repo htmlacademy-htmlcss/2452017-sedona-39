@@ -9,50 +9,48 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <nav class="navigation-container">
-        <div class="logo-container">
-          <a class="logo-link" href="index.html">
-            <img class="logo-header" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
-          </a>
-        </div>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link-index" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-user">
-          <li class="user-item">
-            <a class="search-link" href="#">
-              <span class="visually-hidden"> поиск </span>
+    <div class="page-container">
+      <header class="page-header">
+        <nav class="navigation-container">
+          <div class="logo-container">
+            <a class="logo-link" href="index.html">
+              <img class="logo-header" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
             </a>
-          </li>
-          <li class="user-item">
-            <a class="heart-link" href="#">
-              <span class="visually-hidden"> избранное </span>
-              <span class="heart-number">12</span>
-            </a>
-          </li>
-          <li class="user-item">
-            <a class="user-link-button" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class=" main-index">
-      <div class="page-container">
+          </div>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link-index" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="user-item">
+              <a class="search-link" href="#">
+                <span class="visually-hidden"> поиск </span>
+              </a>
+            </li>
+            <li class="user-item">
+              <a class="heart-link" href="#">
+                <span class="visually-hidden"> избранное </span>
+                <span class="heart-number">12</span>
+              </a>
+            </li>
+            <li class="user-item">
+              <a class="user-link-button" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class=" main-index">
+
         <section class="hero">
           <img class="hero-image" src="images/welcome-sedona.svg" width="458" height="352"
             alt="Welcom to the gorgeous Sedona becouse the Grand Canyon sicks!">
-          <p class="visually-hidden">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
-          <p>
         </section>
         <section class="subtitle">
           <h1 class="slogan">
@@ -96,7 +94,7 @@
         </section>
         <section class="advantages-fifth">
           <div class="advantages-item-fifth">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
+            <h3 class="advantages-title">Там есть <br>мост дьявола</h3>
             <p class="advantages-discription">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
@@ -116,7 +114,7 @@
             <li class="service-item">
               <h4 class="service-title">Жильё</h4>
               <p class="service-discription">
-                Рекомендуем пожитьв настоящем мотеле, всё как в кино!
+                Рекомендуем пожить в настоящем мотеле, всё как в кино!
               </p>
             </li>
             <li class="service-item">
@@ -133,15 +131,13 @@
             </li>
           </ul>
         </section>
-        <section class="booking">
-          <div class="booking-container">
-            <h2 class="booking-title">Заинтересовались?</h2>
-            <p class="booking-discription">
-              Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
-              предложения гостиниц в Седоне
-            </p>
-            <a class="button-search" href="catalog.html">Поиск гостиницы в Седоне</a>
-          </div>
+        <section class="booking-container">
+          <h2 class="booking-title">Заинтересовались?</h2>
+          <p class="booking-discription">
+            Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
+            предложения гостиниц в Седоне
+          </p>
+          <a class="button-search" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscribe">
           <h2 class="email-section-title">Подпишитесь на рассылку</h2>
@@ -153,10 +149,8 @@
             <button class="subscribe-btn" type="submit">Подписаться</button>
           </form>
         </section>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer-container">
+      </main>
+      <footer class="page-footer">
         <ul class="social-list">
           <li class="social-item">
             <a class="vk-link" href="https://vk.com/htmlacademy">
@@ -181,79 +175,80 @@
           <a class="footer-logo-html" href="https://htmlacademy.ru/">
           </a>
         </section>
-      </div>
-    </footer>
-    <div class="model-container">
-      <div class="modal modal-auth">
-        <div class="modal-close">
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-        </div>
-        <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="appointment">
-              <label class="form-label" for="appointment-date">
-                Дата Заезда: </label>
-              <input class="field" type="text" id="appointment-date" name="appointment-date" value="27 апреля 2020" placeholder="Укажите дату"
-                required>
-              <button class="calendar-icon" type="button"></button>
-            </div>
-            <p class="appointment-info">Мы не можем отправить вас в прошлое.</p>
-            <div class="appointment">
-              <label class="form-label" for="appointment-time">
-                Дата Выезда:</label>
-              <input class="field" type="text" id="appointment-time" name="appointment-time" value="1 сентября 2023" placeholder="Укажите дату"
-                required>
-              <button class="calendar-icon" type="button"></button>
-            </div>
-            <p class="appointment-info-number">На эти даты есть свободные номера. Пока есть.</p>
-            <section class="form-persons">
-              <div class="field-adult">
-                <label class="form-label" for="appointment-adult">
-                  Взрослые
-                </label>
-                <div class="button-group">
-                  <div class="container-minus">
-                    <button class="button-minus" type="button"></button>
+      </footer>
+      <div class="model-container">
+        <div class="modal modal-auth">
+          <div class="modal-close">
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="appointment" for="appointment-date">
+                <span class="form-title" >
+                  Дата Заезда: </span>
+                <input class="field" type="text" id="appointment-date" name="appointment-date" value="27 апреля 2020"
+                  placeholder="Укажите дату" required>
+                <button class="calendar-icon" type="button"></button>
+              </label>
+              <p class="appointment-info">Мы не можем отправить вас в прошлое.</p>
+              <label class="appointment" for="appointment-time">
+                <span class="form-title" >
+                  Дата Выезда:</span>
+                <input class="field" type="text" id="appointment-time" name="appointment-time" value="1 сентября 2023"
+                  placeholder="Укажите дату" required>
+                <button class="calendar-icon" type="button"></button>
+              </label>
+              <p class="appointment-info-number">На эти даты есть свободные номера. Пока есть.</p>
+              <section class="form-persons">
+                <label class="field-adult" for="appointment-adult">
+                  <span class="form-title">Взрослые:</span>
+                  <div class="button-group">
+                    <button class="button-minus" type="button">
+                      <span class="visually-hidden">кнопка минуса</span>
+                    </button>
+                    <input class="field-persons" type="number" id="appointment-adult" name="appointment-adult" value="2"
+                      required>
+                    <button class="button-plus" type="button">
+                      <span class="visually-hidden">кнопка плюса</span>
+                    </button>
                   </div>
-                  <input class="field-persons" type="text" id="appointment-adult" name="appointment-adult" value="2"
-                    required>
-                  <div class="container-plus">
-                    <button class="button-plus" type="button"></button>
-                  </div>
-                </div>
-              </div>
-              <div class="field-children">
-                <label class="form-label icon" for="appointment-children">
-                  Дети
                 </label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                    <svg class="tooltip-icon" width="1" height="9" fill="none">
-                      <path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут
-                    с вами, возраст
-                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
+                <label class="field-children" for="appointment-children">
+                  <span class="form-title">Дети:</span>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" width="1" height="1" fill="none">
+                        <path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                      будут
+                      с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
                   <div class="button-group">
                     <div class="container-minus">
-                      <button class="button-minus" type="button"></button>
+                      <button class="button-minus" type="button">
+                        <span class="visually-hidden">кнопка минуса</span>
+                      </button>
                     </div>
                     <input class="field-persons" type="text" id="appointment-children" name="appointment-children"
                       value="2" required>
                     <div class="container-plus">
-                      <button class="button-plus" type="button"></button>
+                      <button class="button-plus" type="button">
+                        <span class="visually-hidden">кнопка плюса</span>
+                      </button>
                     </div>
                   </div>
-              </div>
-            </section>
-            <button class="button appointment-submit" type="submit">Найти</button>
-          </form>
-        </section>
+                </label>
+              </section>
+              <button class="button appointment-submit" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
       </div>
     </div>
   </body>
