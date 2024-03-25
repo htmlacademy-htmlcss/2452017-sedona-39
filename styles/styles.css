@@ -1665,7 +1665,6 @@ body {
 }
 
 /* модалтное окно */
-.modal-container-close {}
 
 .model-container {
   position: fixed;
@@ -1675,11 +1674,11 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
-
 
 }
-
+.modal-container-close{
+  display: none;
+}
 .modal {
   position: relative;
   margin: auto;
