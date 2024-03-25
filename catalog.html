@@ -9,7 +9,7 @@
 
   <body>
     <div class="page-container">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation-container">
           <div class="logo-container">
             <a class="logo-link" href="index.html">
@@ -45,8 +45,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
-      <section class="section-inner">
+    <main class="main-inner" data-test="main">
+      <section class="section-inner" data-test="section-inner">
         <h1 class="main-inner-title">Гостиницы Седоны</h1>
         <header class="inner-header">
           <ul class="inner-list">
@@ -123,8 +123,10 @@
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0px; width: 226px">
                     <button class="range-toggle toggle-min" tybe="button">
+                      <span class="visually-hidden">кнопка уменьшения цены</span>
                     </button>
                     <button class="range-toggle toggle-max" tybe="button">
+                      <span class="visually-hidden">кнопка увеличения цены</span>
                     </button>
                   </div>
                 </div>
@@ -136,7 +138,7 @@
           </div>
       </form>
       </section>
-        <div class="catalog">
+        <div class="catalog" data-test="catalog">
           <section class="hotels-catalog">
             <h2 class="hotels-catalog-title">Найдено гостиниц: 38</h2>
             <div class="select">
@@ -163,7 +165,7 @@
               </ul>
             </div>
           </section>
-          <section class="hotels">
+          <section class="hotels" data-test="hotels">
           <ul class="hotel-card">
             <li class="hotel-card-link">
               <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212"
@@ -257,7 +259,7 @@
             </li>
           </ul>
         </section>
-          <div class="pagination">
+          <div class="pagination" data-test="pagination">
             <ul class="pagination-list">
               <li class="pagination-item">
                 <a class="pagination-link-active" href="#">1</a>
@@ -280,7 +282,7 @@
             </ul>
           </div>
       </div>
-      <section class="subscribe-special">
+      <section class="subscribe-special" data-test="subscribe-special">
         <h2 class="email-section-title">Подпишитесь на рассылку</h2>
         <p class="email-section-discription">
           Только полезная информация и никакого спама, <br>честное бойскаутское!
@@ -291,7 +293,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="vk-link" href="https://vk.com/htmlacademy">
