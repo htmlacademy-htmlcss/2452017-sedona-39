@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Мой проект "Седона"</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico/favicon-32x32.png">
 
   </head>
 
@@ -175,7 +176,7 @@
           </a>
         </section>
       </footer>
-      <div class="model-container modal-container-close" data-test="modal">
+      <div class="model-container" data-test="modal">
         <div class="modal modal-auth">
           <div class="modal-close">
             <button class="modal-close-button" type="button">
@@ -185,39 +186,42 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="appointment" for="appointment-date">
-                <span class="form-title">
-                  Дата Заезда: </span>
+              <div class="appointment date">
+                <label class="appointment" for="appointment-date"></label>
+                <span class="form-title"> Дата Заезда: </span>
                 <input class="field" type="text" id="appointment-date" name="appointment-date" value="27 апреля 2020"
-                  placeholder="Укажите дату" required>
-              </label>
-              <button class="calendar-icon form" type="button"></button>
-              <p class="appointment-info">Мы не можем отправить вас в прошлое.</p>
-              <label class="appointment" for="appointment-time">
-                <span class="form-title">
-                  Дата Выезда:</span>
+                  placeholder="Укажите дату" required />
+                <button class="calendar date" type="button"></button>
+                <p class="appointment-info">
+                  Мы не можем отправить вас в прошлое.
+                </p>
+              </div>
+              <div class="appointment time">
+                <label class="label-time" for="appointment-time"></label>
+                <span class="form-title"> Дата Выезда:</span>
                 <input class="field" type="text" id="appointment-time" name="appointment-time" value="1 сентября 2023"
-                  placeholder="Укажите дату" required>
-              </label>
-              <button class="calendar-icon time" type="button"></button>
-              <p class="appointment-info-number">На эти даты есть свободные номера. Пока есть.</p>
+                  placeholder="Укажите дату" required />
+                <button class="calendar time" type="button"></button>
+                <p class="appointment-info-number">
+                  На эти даты есть свободные номера. Пока есть.
+                </p>
+              </div>
               <section class="form-group">
-              <fieldset class="form-persons">
-                <span class="form-title">Взрослые:</span>
-                <button class="button-minus adult" type="button">
-                  <span class="visually-hidden">кнопка минуса</span>
-                </button>
-                <label class="field-adult">
-                  <input class="field-persons" type="number" id="appointment-adult" name="appointment-adult" value="2"
-                    required>
-                </label>
-                <button class="button-plus adult" type="button">
-                  <span class="visually-hidden">кнопка плюса</span>
-                </button>
-
-              </fieldset>
-              <fieldset class="form-persons children">
-                  <span class="form-title ">Дети:</span>
+                <fieldset class="form-persons">
+                  <span class="form-title">Взрослые:</span>
+                  <button class="button-minus adult" type="button">
+                    <span class="visually-hidden">кнопка минуса</span>
+                  </button>
+                  <label class="field-adult">
+                    <input class="field-persons" type="number" id="appointment-adult" name="appointment-adult" value="2"
+                      required />
+                  </label>
+                  <button class="button-plus adult" type="button">
+                    <span class="visually-hidden">кнопка плюса</span>
+                  </button>
+                </fieldset>
+                <fieldset class="form-persons children">
+                  <span class="form-title">Дети:</span>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                       <svg class="tooltip-icon" width="1" height="1" fill="none">
@@ -225,24 +229,25 @@
                       </svg>
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
-                      будут
-                      с вами, возраст
-                      которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются
+                      бесплатно.</span>
                   </span>
                   <button class="button-minus children" type="button">
                     <span class="visually-hidden">кнопка минуса</span>
                   </button>
                   <label class="field-children">
-                  <input class="field-persons children" type="number" id="appointment-children"
-                    name="appointment-children" value="2" required>
+                    <input class="field-persons children" type="number" id="appointment-children"
+                      name="appointment-children" value="2" required />
                   </label>
-                    <button class="button-plus children" type="button">
+                  <button class="button-plus children" type="button">
                     <span class="visually-hidden">кнопка плюса</span>
                   </button>
-
-              </fieldset>
-            </section>
-              <button class="button appointment-submit" type="submit">Найти</button>
+                </fieldset>
+              </section>
+              <button class="button appointment-submit" type="submit">
+                Найти
+              </button>
             </form>
           </section>
         </div>
