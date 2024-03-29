@@ -45,9 +45,9 @@ body {
 /* логотип города Седона */
 .logo-container {
   display: block;
+  position: absolute;
 }
 .logo-header {
-  position: relative;
   margin-right: 28px;
 }
 .logo-header:hover,
@@ -60,7 +60,8 @@ body {
 /* navigation-list index*/
 .navigation-list {
   list-style-type: none;
-  margin: 0;
+  margin:  0px 0px 0px 170px;
+
   padding: 0;
   width: 620px;
   display: flex;
@@ -252,6 +253,7 @@ body {
   background-color: #ffffff;
   color: #242424;
 }
+
 .hero {
   background-image: url(../images/index-backgroud-white.svg),
     url(../images/index-background.jpg);
